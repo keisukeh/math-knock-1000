@@ -2,8 +2,8 @@ import 'package:bibun/differential_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_tex/flutter_tex.dart';
 
-import 'differentials.dart';
-import 'exponentials.dart';
+import 'questions/differentials.dart';
+import 'questions/exponentials.dart';
 
 void main() {
   runApp(const MyApp());
@@ -44,9 +44,9 @@ class DifferentialProblemsScreen extends StatelessWidget {
         ),
         body: TabBarView(
           children: [
-            QuestionScreen(problems: differentialProblems),
-            QuestionScreen(problems: exponentialProblems),
-            QuestionScreen(problems: differentialProblems),
+            QuestionScreen(questions: differentialProblems),
+            QuestionScreen(questions: exponentialProblems),
+            QuestionScreen(questions: differentialProblems),
           ],
         ),
       ),
